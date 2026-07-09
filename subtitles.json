@@ -1,0 +1,28 @@
+[
+  {
+    "manifestVersion": 2,
+    "name": "Subtitles (RU/EN)",
+    "id": "wyzie-subs",
+    "version": "1.0.0",
+    "type": "subtitle",
+    "accuracy": "medium",
+    "media": "sub",
+    "languages": ["RU", "US"],
+    "url": "aHR0cHM6Ly9zdWIud3l6aWUuaW8=",
+    "icon": "https://sub.wyzie.io/favicon.ico",
+    "update": "https://raw.githubusercontent.com/Skolskey/hayase-rutracker/main/subtitles.json",
+    "code": "https://raw.githubusercontent.com/Skolskey/hayase-rutracker/main/dist/subtitles.js",
+    "options": {
+      "key": {
+        "type": "string",
+        "description": "Бесплатный Wyzie API-ключ. Получить: откройте store.wyzie.io/redeem, заберите ключ и вставьте сюда. Без него субтитры не загрузятся.",
+        "default": ""
+      },
+      "languages": {
+        "type": "string",
+        "description": "Языки субтитров через запятую (ISO-коды). По умолчанию русский и английский.",
+        "default": "ru,en"
+      }
+    }
+  }
+]

@@ -48,7 +48,27 @@ https://raw.githubusercontent.com/Skolskey/hayase-rutracker/main/index.json
 работе — никаких настроек не требуется. Раздачи появятся, когда вы откроете аниме
 и выберете серию для просмотра.
 
+## Субтитры (RU/EN)
+
+Отдельное расширение типа `subtitle` подгружает русские и английские субтитры к
+любой раздаче через агрегатор [Wyzie](https://sub.wyzie.io) (проксирует
+OpenSubtitles/SubDL). Позволяет смотреть оригинал/англ. озвучку с русскими сабами.
+
+Импорт — **отдельной ссылкой**:
+
+```
+https://raw.githubusercontent.com/Skolskey/hayase-rutracker/main/subtitles.json
+```
+
+После импорта откройте настройки расширения «Subtitles (RU/EN)» и вставьте
+бесплатный **Wyzie API-ключ** (получить: <https://store.wyzie.io/redeem>). Языки по
+умолчанию — `ru,en`, можно поменять.
+
+Субтитры подтягиваются по IMDb/TMDB ID тайтла, поэтому для аниме без такого маппинга
+результат может быть пустым — это ожидаемо.
+
 ## Обновление
 
-После правок: `npm run build`, поднимите `version` в `index.json`, затем
-`git commit -am "..." && git push`. Hayase подтянет новую версию по полю `update`.
+После правок: `npm run build`, поднимите `version` в соответствующем манифесте
+(`index.json` или `subtitles.json`), затем `git commit -am "..." && git push`.
+Hayase подтянет новую версию по полю `update`.
