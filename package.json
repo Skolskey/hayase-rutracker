@@ -4,7 +4,7 @@
   "private": true,
   "type": "module",
   "scripts": {
-    "build": "esbuild src/rutracker.js --bundle --format=esm --outfile=dist/rutracker.js",
+    "build": "esbuild src/anilibria.js --bundle --format=esm --outfile=dist/anilibria.js",
     "test": "npm run build && node test/local-test.mjs"
   },
   "devDependencies": {

@@ -1,40 +1,18 @@
 [
   {
     "manifestVersion": 2,
-    "name": "RuTracker",
-    "id": "rutracker",
+    "name": "AniLibria",
+    "id": "anilibria",
     "version": "1.0.0",
     "type": "torrent",
-    "accuracy": "low",
+    "accuracy": "medium",
     "updatePeers": false,
     "ratio": 0,
     "media": "both",
     "languages": ["RU"],
-    "url": "aHR0cHM6Ly9ydXRyYWNrZXIub3Jn",
-    "icon": "https://rutracker.org/favicon.ico",
+    "url": "aHR0cHM6Ly9hbmlsaWJyaWEudG9w",
+    "icon": "https://anilibria.top/favicon.ico",
     "update": "https://raw.githubusercontent.com/Skolskey/hayase-rutracker/main/index.json",
-    "code": "https://raw.githubusercontent.com/Skolskey/hayase-rutracker/main/dist/rutracker.js",
-    "options": {
-      "cookie": {
-        "type": "string",
-        "description": "Cookie bb_session из браузера — основной способ авторизации (RuTracker всегда требует капчу при входе, поэтому логин/пароль не работают автоматически). Войдите на rutracker.org, затем DevTools → Application → Cookies → скопируйте значение bb_session. Формат: bb_session=12345-abcdef...",
-        "default": ""
-      },
-      "username": {
-        "type": "string",
-        "description": "Логин RuTracker (запасной вариант, сработает только если трекер не показывает капчу)",
-        "default": ""
-      },
-      "password": {
-        "type": "string",
-        "description": "Пароль RuTracker (запасной вариант)",
-        "default": ""
-      },
-      "mirror": {
-        "type": "string",
-        "description": "Зеркало трекера, если основной домен недоступен",
-        "default": "https://rutracker.org"
-      }
-    }
+    "code": "https://raw.githubusercontent.com/Skolskey/hayase-rutracker/main/dist/anilibria.js"
   }
 ]
