@@ -1,0 +1,13 @@
+{
+  "name": "hayase-rutracker",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "esbuild src/rutracker.js --bundle --format=esm --outfile=dist/rutracker.js",
+    "test": "npm run build && node test/local-test.mjs"
+  },
+  "devDependencies": {
+    "esbuild": "^0.24.0"
+  }
+}
